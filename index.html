@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <title>Abdullah's - Travel Vlog</title>
+        <!--
+    Original Template: Soft Landing Page by Tooplate
+    Template 2106 Soft Landing
+        http://www.tooplate.com/view/2106-soft-landing
+    Modified for Japan Travel Vlog by [Your Name]
+    -->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Personal travel vlog about exploring Japan">
+     <meta name="keywords" content="Japan, travel, vlog, Tokyo, Kyoto, Osaka, adventure">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
+     <!-- background -->
+     <style>
+  body {
+    background-image: url('sddefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+     <!-- CUSTOM CSS MODIFICATIONS -->
+     <style>
+          .greeting-box {
+  margin-top: 30px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.greeting-box input {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border: 2px solid #d32f2f;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.greeting-box button {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.greeting-box button:hover {
+  background-color: #d32f2f;
+}
+
+#greetingText {
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #333;
+  font-weight: bold;
+}
+
+     /* Custom Japan-themed styling */
+     body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+
+     .navbar-brand {
+         font-size: 28px !important;
+         font-weight: bold !important;
+         color: #d32f2f !important; /* Japanese red */
+     }
+
+     #home {
+         background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb) !important;
+         background-size: 400% 400% !important;
+         animation: gradientShift 8s ease infinite !important;
+     }
+
+     @keyframes gradientShift {
+         0% { background-position: 0% 50%; }
+         50% { background-position: 100% 50%; }
+         100% { background-position: 0% 50%; }
+     }
+
+     .home-info h1 {
+         color: white !important;
+         text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+         font-size: 3.5em !important;
+         margin-bottom: 30px !important;
+     }
+
+     .home-info h3 {
+         color: #fff !important;
+         text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+         font-size: 1.8em !important;
+         margin-bottom: 20px !important;
+     }
+
+     .welcome-message {
+         background: rgba(255, 255, 255, 0.95);
+         padding: 20px;
+         border-radius: 15px;
+         margin-bottom: 30px;
+         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+         border-left: 5px solid #d32f2f;
+     }
+
+     .welcome-message h2 {
+         color: #d32f2f;
+         margin-bottom: 10px;
+         font-size: 2em;
+     }
+
+     .welcome-message p {
+         color: #333;
+         font-size: 1.1em;
+         margin: 0;
+     }
+
+     .japan-counter {
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         color: white;
+         padding: 30px;
+         border-radius: 15px;
+         text-align: center;
+         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+         margin: 30px 0;
+     }
+
+     .japan-counter h3 {
+         font-size: 2.5em;
+         margin-bottom: 10px;
+         color: #fff;
+     }
+
+     .japan-counter p {
+         font-size: 1.2em;
+         margin: 0;
+         opacity: 0.9;
+     }
+
+     .counter-button {
+         background: #ff6b6b;
+         color: white;
+         border: none;
+         padding: 15px 30px;
+         border-radius: 25px;
+         font-size: 1.1em;
+         margin-top: 20px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+     }
+
+     .counter-button:hover {
+         background: #ff5252;
+         transform: translateY(-2px);
+         box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+     }
+
+     .section-title h1 {
+         color: #d32f2f !important;
+         position: relative;
+     }
+
+     .section-title h1::after {
+         content: '';
+         position: absolute;
+         bottom: -10px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 80px;
+         height: 3px;
+         background: linear-gradient(45deg, #ff6b6b, #feca57);
+     }
+
+     .travel-destination {
+         background: linear-gradient(135deg, #74b9ff, #0984e3);
+         color: white;
+         padding: 25px;
+         border-radius: 15px;
+         margin-bottom: 20px;
+         box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+         transition: transform 0.3s ease;
+     }
+
+     .travel-destination:hover {
+         transform: translateY(-5px);
+     }
+
+     .travel-destination h3 {
+         color: white;
+         margin-bottom: 15px;
+         font-size: 1.8em;
+     }
+
+     .travel-destination p {
+         color: rgba(255,255,255,0.9);
+         font-size: 1.1em;
+         line-height: 1.6;
+     }
+
+     .original-template-link {
+         position: fixed;
+         top: 20px;
+         right: 20px;
+         background: #d32f2f;
+         color: white;
+         padding: 10px 20px;
+         border-radius: 25px;
+         text-decoration: none;
+         font-weight: bold;
+         z-index: 1000;
+         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+         transition: all 0.3s ease;
+     }
+
+     .original-template-link:hover {
+         background: #b71c1c;
+         color: white;
+         text-decoration: none;
+         transform: translateY(-2px);
+         box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+     }
+
+     /* Custom footer styling */
+     #footer {
+         background: #2c3e50 !important;
+         color: white !important;
+     }
+
+     .student-info {
+         background: #34495e;
+         color: white;
+         padding: 20px;
+         border-radius: 10px;
+         margin-bottom: 20px;
+         text-align: center;
+     }
+
+     .student-info h4 {
+         color: #ecf0f1;
+         margin-bottom: 10px;
+         font-size: 1.3em;
+     }
+
+     .student-info p {
+         color: #bdc3c7;
+         margin: 5px 0;
+     }
+
+     /* Custom notification dropdown */
+     .notification-dropdown {
+         position: fixed;
+         top: 100px;
+         right: 30px;
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         color: white;
+         padding: 25px;
+         border-radius: 15px;
+         box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+         z-index: 2000;
+         max-width: 350px;
+         transform: translateY(-20px);
+         opacity: 0;
+         transition: all 0.4s ease;
+         border: 2px solid #fff;
+     }
+
+     .notification-dropdown.show {
+         transform: translateY(0);
+         opacity: 1;
+     }
+
+     .notification-dropdown h3 {
+         color: #fff;
+         margin-bottom: 15px;
+         font-size: 1.8em;
+         text-align: center;
+     }
+
+     .notification-dropdown p {
+         color: rgba(255,255,255,0.9);
+         font-size: 1.1em;
+         text-align: center;
+         margin-bottom: 20px;
+         line-height: 1.5;
+     }
+
+     .notification-ok-btn {
+         background: #ff6b6b;
+         color: white;
+         border: none;
+         padding: 12px 30px;
+         border-radius: 25px;
+         font-size: 1.1em;
+         font-weight: bold;
+         cursor: pointer;
+         display: block;
+         margin: 0 auto;
+         transition: all 0.3s ease;
+         box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+     }
+
+     .notification-ok-btn:hover {
+         background: #ff5252;
+         transform: translateY(-2px);
+         box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+     }
+
+     .notification-close {
+         position: absolute;
+         top: 10px;
+         right: 15px;
+         background: none;
+         border: none;
+         color: white;
+         font-size: 1.5em;
+         cursor: pointer;
+         opacity: 0.7;
+         transition: opacity 0.3s ease;
+     }
+
+     .notification-close:hover {
+         opacity: 1;
+     }
+     </style>
+
+</head>
+<body>
+
+     <!-- NOTIFICATION DROPDOWN -->
+     <div class="notification-dropdown" id="notificationDropdown">
+          <button class="notification-close" onclick="closeNotification()">&times;</button>
+          <h3>🌸 Welcome 🌸</h3>
+          <p>Thank you for visiting my Japan travel vlog! I hope you enjoy exploring my adventures through the Land of the Rising Sun.</p>
+          <button class="notification-ok-btn" onclick="closeNotification()">OK</button>
+     </div>
+
+     </a>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">🇯🇵 Abdullah's Japan Adventures</a>
+               </div>
+
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                         <li><a href="#home" class="smoothScroll">Home</a></li>
+                         <li><a href="#destinations" class="smoothScroll">Destinations</a></li>
+                         <li><a href="#experiences" class="smoothScroll">Experiences</a></li>
+                         <li><a href="#gallery" class="smoothScroll">Gallery</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Email Me - <span>abdullahkhan81180@gmail.com</span></a></li>
+                    </ul>
+               </div>
+          </div>
+     </section>
+
+     <!-- HOME -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-2 col-md-8 col-sm-12">
+                         <div class="home-info">
+                              <!-- WELCOME MESSAGE (JavaScript requirement) -->
+                              <div class="welcome-message" id="welcomeMessage" style="display: none;">
+                                   <h2>🌸 Welcome to my Japan Adventure!</h2>
+                                   <p>Join me as I explore the Land of the Rising Sun, one adventure at a time!</p>
+                              </div>
+
+                              <h3>Personal Travel Vlog</h3>
+                              <h1>Discovering Japan's Hidden Gems</h1>
+<div class="greeting-box">
+  <input type="text" id="userName" placeholder="Enter your name..." />
+  <button onclick="displayGreeting()">Say Hi 👋</button>
+  <p id="greetingText"></p>
+</div>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- DESTINATIONS -->
+     <section id="destinations" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h1>My Favorite Destinations</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <ul class="nav nav-tabs" role="tablist">
+                              <li class="active"><a href="#tokyo" aria-controls="tokyo" role="tab" data-toggle="tab">Tokyo</a></li>
+                              <li><a href="#kyoto" aria-controls="kyoto" role="tab" data-toggle="tab">Kyoto</a></li>
+                              <li><a href="#osaka" aria-controls="osaka" role="tab" data-toggle="tab">Osaka</a></li>
+                         </ul>
+
+                         <div class="tab-content">
+                              <div class="tab-pane active" id="tokyo" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>🏙️ Tokyo Metropolis</h2>
+                                        <p>The bustling capital city where tradition meets modernity. From the serene Meiji Shrine to the vibrant streets of Shibuya, Tokyo never fails to amaze me with its endless energy and contrasts.</p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>🍣 Culinary Paradise</h2>
+                                        <p>From street food in Tsukiji to Michelin-starred restaurants, Tokyo's food scene is unparalleled. Every meal is an adventure waiting to be discovered!</p>
+                                   </div>
+                              </div>
+
+                              <div class="tab-pane" id="kyoto" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>🏯 Ancient Temples</h2>
+                                        <p>Kyoto's temples and shrines tell stories of centuries past. The golden Kinkaku-ji and the thousand torii gates of Fushimi Inari are absolutely breathtaking.</p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>🌸 Seasonal Beauty</h2>
+                                        <p>Whether it's cherry blossoms in spring or autumn colors in fall, Kyoto's natural beauty changes with the seasons, offering new wonders each visit.</p>
+                                   </div>
+                              </div>
+
+                              <div class="tab-pane" id="osaka" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>🍜 Food Capital</h2>
+                                        <p>Osaka is Japan's kitchen! From takoyaki to okonomiyaki, the street food culture here is incredible. Every corner has a new flavor to discover.</p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>🏰 Historic Castle</h2>
+                                        <p>Osaka Castle stands as a magnificent reminder of Japan's feudal past, offering stunning views of the modern city from its ancient walls.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    
+
+
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- EXPERIENCES -->
+     <section id="experiences" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-2 col-md-8 col-sm-12">
+                         <div class="section-title">
+                              <h1>Unforgettable Experiences</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="travel-destination">
+                              <h3>🗻 Mount Fuji Sunrise</h3>
+                              <p>Watching the sunrise behind Mount Fuji was unforgettable the sky slowly turning gold as the mountain stood still, quiet, and majestic. It was one of those rare moments where everything just felt right.</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="travel-destination">
+                              <h3>🎎 Traditional Ryokan</h3>
+                              <p>Staying in a traditional Japanese inn in Hakone, complete with tatami floors, futon beds, and kaiseki dinner. The onsen hot spring bath under the stars was pure bliss after a day of exploring.</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="travel-destination">
+                              <h3>🌸 Cherry Blossom Festival</h3>
+                              <p>Experiencing hanami (flower viewing) in Yoshino Park with thousands of cherry trees in full bloom. The pink petals falling like snow created a magical atmosphere that felt like stepping into a dream.</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- GALLERY -->
+<section id="gallery" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row">
+
+      <!-- LEFT SIDE: Image -->
+      <div class="col-md-6 col-sm-12 text-center">
+        <img src="images/abdullah.jpeg" 
+             alt="Abdullah's Photo"
+             style="width: 300px; max-width: 100%; height: auto; border-radius: 10px; display: inline-block;">
+      </div>
+
+    <!-- RIGHT SIDE: Testimonials -->
+<div class="col-md-6 col-sm-12">
+  <div class="testimonial-info">
+    <div class="section-title">
+      <h1>Travel Memories</h1>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      <!-- Testimonial 1 -->
+      <div class="item">
+        <h3>"The neon lights of Tokyo at night create a cyberpunk atmosphere that makes you feel like you're in the future. Every street corner tells a different story."</h3>
+        <div class="testimonial-item">
+          <img src="images/tokyo-night.jpg" alt="Tokyo Night">
+          <h4>Tokyo Nights</h4>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="item">
+        <h3>"Walking through the bamboo groves of Arashiyama feels like entering another world. The sound of bamboo swaying in the wind is incredibly peaceful."</h3>
+        <div class="testimonial-item">
+          <img src="images/bamboo-forest.jpg" alt="Bamboo Forest">
+          <h4>Bamboo Forest</h4>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="item">
+        <h3>"The bullet train journey from Tokyo to Kyoto offers glimpses of Mount Fuji and beautiful countryside. It's not just transportation, it's part of the adventure."</h3>
+        <div class="testimonial-item">
+          <img src="images/shinkansen.jpg" alt="Shinkansen">
+          <h4>Shinkansen Journey</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div> <!-- END ROW -->
+    
+
+  </div> <!-- END CONTAINER -->
+</section>
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+                    <!-- STUDENT INFO (Assignment Requirement) -->
+                    <div class="col-md-12 col-sm-12">
+                         <div class="student-info">
+                              <h4>Student Information</h4>
+                              <p><strong>Name:</strong>Abdullah MD</p>
+                              <p><strong>Student ID:</strong>24319001</p>
+                         </div>
+                    </div>
+
+                    <div class="copyright-text col-md-12 col-sm-12">
+                         <div class="col-md-6 col-sm-6">
+                              <p>Copyright &copy; Abdullah's Travel Vlog
+                                                </p>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+  <p>Template by <a href="http://www.tooplate.com/view/2106-soft-landing" target="_blank" style="color:#ff6b6b; font-weight:bold;">Tooplate</a></p>
+</div>
+
+
+                         <div class="col-md-6 col-sm-6">
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+     <!-- CUSTOM JAVASCRIPT -->
+     <script>
+     // Notification dropdown functionality (Assignment Requirement)
+     window.addEventListener('load', function() {
+         setTimeout(function() {
+             document.getElementById('notificationDropdown').classList.add('show');
+         }, 500);
+     });
+
+     function closeNotification() {
+         const notification = document.getElementById('notificationDropdown');
+         notification.style.transform = 'translateY(-20px)';
+         notification.style.opacity = '0';
+         setTimeout(function() {
+             notification.style.display = 'none';
+         }, 400);
+     }
+
+     // Welcome message display (Assignment Requirement)
+     window.addEventListener('load', function() {
+         setTimeout(function() {
+             document.getElementById('welcomeMessage').style.display = 'block';
+             document.getElementById('welcomeMessage').style.animation = 'fadeIn 1s ease-in';
+         }, 1000);
+     });
+
+     // Interactive visit counter (Assignment Requirement - Custom JS Function)
+     let visitCount = 12;
+
+     function addVisit() {
+         visitCount++;
+         document.getElementById('visitCounter').textContent = visitCount;
+
+         // Show celebration message
+         alert('🎉 Amazing! You\'ve discovered ' + visitCount + ' places in Japan! Keep exploring!');
+
+         // Add some visual feedback
+         const counter = document.getElementById('visitCounter');
+         counter.style.transform = 'scale(1.2)';
+         counter.style.color = '#feca57';
+
+         setTimeout(function() {
+             counter.style.transform = 'scale(1)';
+             counter.style.color = '#fff';
+         }, 300);
+     }
+function displayGreeting() {
+  const name = document.getElementById("userName").value.trim();
+  const greeting = document.getElementById("greetingText");
+
+  if (name !== "") {
+    greeting.textContent = `Konnichiwa, ${name}! 👘 Where are you visiting next?`;
+  } else {
+    greeting.textContent = "Please enter your name to get a greeting!";
+  }
+}
+
+     // Add CSS animation for welcome message
+     const style = document.createElement('style');
+     style.textContent = `
+         @keyframes fadeIn {
+             from { opacity: 0; transform: translateY(-20px); }
+             to { opacity: 1; transform: translateY(0); }
+         }
+     `;
+     document.head.appendChild(style);
+     </script>
+
+</body>
+</html>
